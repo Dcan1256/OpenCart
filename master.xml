@@ -10,9 +10,14 @@
     <test thread-count="5" name="OpenCartTest">
         <parameter name="browser" value="edge" />    <!-- passing browser parameter to BaseClass ->Setup() -->
         <classes>
+
+
             <class name="testCases.TC_001_AccountRegistrationTest"/>
             <class name="testCases.TC_002_LoginTest"/>
             <class name="testCases.TC_003_LoginDataDrivenTest"/>
+            <class name="testCases.TC_004_SearchProduct"/>
+            
+
         </classes>
     </test><!--OpenCartTest-->
 </suite> <!--OpenCartSuit-->
