@@ -24,6 +24,31 @@ public class HomePage extends BasePage {
 
     @FindBy(xpath = "//*[@id=\"search\"]/span/button")
     public WebElement searchBtn;
+
+    @FindBy(xpath = "//*[@id=\"content\"]/div[2]/div[1]/div/div[3]/button[1]")
+    public WebElement product1;
+
+
+    @FindBy(xpath = "//*[@id=\"content\"]/div[2]/div[2]/div/div[3]/button[1]")
+    public WebElement product2;
+
+
+    @FindBy(xpath = "//*[@id=\"content\"]/div[2]/div[3]/div/div[3]/button[1]")
+    public WebElement product3;
+
+
+
+    @FindBy(xpath = "//*[@id=\"content\"]/div[2]/div[4]/div/div[3]/button[1]")
+    public WebElement product4;
+
+    @FindBy(xpath = "//*[@id=\"cart\"]/button")
+    public WebElement cartBtn;
+
+    @FindBy(xpath = "//*[@id=\"cart\"]/ul/li[2]/div/p/a[1]")
+    public WebElement viewCartBtn;
+
+
+
     //Action Methods
     public void clickMyAccount(){
         lnkMyAccount.click();
@@ -38,5 +63,17 @@ public class HomePage extends BasePage {
     public void doSearch(String search){
         searchBox.sendKeys(search);
         searchBtn.click();
+    }
+
+    public void addingBasicProduct() throws InterruptedException {
+        product1.click();
+        Thread.sleep(1000);
+        product2.click();
+        Thread.sleep(1000);
+    }
+
+    public void goToCart(){
+        cartBtn.click();
+        viewCartBtn.click();
     }
 }

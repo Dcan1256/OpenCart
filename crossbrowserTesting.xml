@@ -8,6 +8,9 @@
         <classes>
             <class name="testCases.TC_001_AccountRegistrationTest"/>
             <class name="testCases.TC_002_LoginTest"/>
+            <class name="testCases.TC_003_LoginDataDrivenTest"/>
+            <class name="testCases.TC_004_SearchProduct"/>
+            <class name="testCases.TC_005_AddingIntoCartTest"/>
         </classes>
     </test><!--OpenCartTest-->
 
@@ -16,6 +19,9 @@
         <classes>
             <class name="testCases.TC_001_AccountRegistrationTest"/>
             <class name="testCases.TC_002_LoginTest"/>
+            <class name="testCases.TC_003_LoginDataDrivenTest"/>
+            <class name="testCases.TC_004_SearchProduct"/>
+            <class name="testCases.TC_005_AddingIntoCartTest"/>
         </classes>
     </test><!--OpenCartTest-->
 
